@@ -1,4 +1,4 @@
-package br.com.exemplo.cliente.json.model;
+package br.com.exemplo.cliente.dto;
 
 /**
  * 

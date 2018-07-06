@@ -13,9 +13,9 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
-import br.com.exemplo.cliente.json.model.IpInformacaoDTO;
-import br.com.exemplo.cliente.json.model.LocalizacaoDTO;
-import br.com.exemplo.cliente.json.model.TemperaturaDTO;
+import br.com.exemplo.cliente.dto.IpInformacaoDTO;
+import br.com.exemplo.cliente.dto.LocalizacaoDTO;
+import br.com.exemplo.cliente.dto.TemperaturaDTO;
 import br.com.exemplo.cliente.service.GerenciadorImpl;
 /**
  * 
