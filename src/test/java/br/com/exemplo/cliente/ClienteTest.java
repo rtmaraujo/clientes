@@ -29,13 +29,12 @@ public class ClienteTest {
 
 	final static String URL_CLIENTES = "http://localhost:8080/clientes";
 
-	private RestTemplate restTemplate;
+	private RestTemplate restTemplate = new RestTemplate();
 	
 	private List<Cliente> lista;
 
 	@Before
 	public void init() throws JsonParseException, JsonMappingException, RestClientException, IOException {
-		restTemplate = new RestTemplate();
 		ObjectMapper mapper = new ObjectMapper();
 		lista = mapper.readValue(restTemplate.getForObject(URL_CLIENTES, String.class),
 				mapper.getTypeFactory().constructCollectionType(List.class, Cliente.class));

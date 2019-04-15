@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.exemplo.cliente.model.Historico;
 import br.com.exemplo.cliente.repository.IHistoricoRepository;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 
 /**
  * 
@@ -18,12 +20,14 @@ import br.com.exemplo.cliente.repository.IHistoricoRepository;
 
 @RestController
 @RequestMapping("/historico")
+@Api(value = "HistoricoResource")
 public class HistoricoResource {
 	
 	@Autowired
 	private IHistoricoRepository historicoRepository;
 	
 	@GetMapping("/listar")
+	@ApiOperation(value = "Listar Historico", notes = "Essa operação retorna uma lista de historico.")
 	public List<Historico> listar() {
 		return historicoRepository.findAll();
 	}

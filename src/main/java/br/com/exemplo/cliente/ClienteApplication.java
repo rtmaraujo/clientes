@@ -2,8 +2,6 @@ package br.com.exemplo.cliente;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
@@ -14,13 +12,8 @@ import org.springframework.web.servlet.DispatcherServlet;
  */
 
 @SpringBootApplication
-public class ClienteApplication extends SpringBootServletInitializer {
+public class ClienteApplication{
 
-	@Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(ClienteApplication.class);
-    }
-	
 	public static void main(String[] args) {
 		
 		ApplicationContext ctx = SpringApplication.run(ClienteApplication.class, args);
