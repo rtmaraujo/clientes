@@ -1,4 +1,4 @@
-package br.com.exemplo.cliente.endpoint;
+package br.com.exemplo.cliente.controller;
 
 import java.util.List;
 
